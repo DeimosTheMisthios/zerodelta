@@ -4,7 +4,6 @@ gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # Apparently this needs to be listed here for latex to work
-  gem "jektex"
   gem "jekyll-remote-theme"
 end
 
