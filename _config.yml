@@ -14,7 +14,7 @@ url: "https://0δ.com" # the base hostname & protocol for your site, e.g. http:/
 github_username: DeimosTheMisthios
 
 # Build settings
-theme: no-style-please
+# theme: no-style-please
 remote_theme: https://github.com/DeimosTheMisthios/no-style-please
 
 theme_config:

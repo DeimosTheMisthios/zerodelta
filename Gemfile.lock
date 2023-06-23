@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/DeimosTheMisthios/no-style-please
-  revision: b9219160202347b367c7c35b8b413b77c0ecfc36
-  specs:
-    no-style-please (0.4.7)
-      jektex (~> 0.1.0)
-      jekyll (~> 3.9.0)
-      jekyll-feed (~> 0.15.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -273,7 +264,6 @@ DEPENDENCIES
   jektex
   jekyll (~> 3.9.0)
   jekyll-remote-theme
-  no-style-please!
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
