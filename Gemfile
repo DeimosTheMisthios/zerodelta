@@ -22,4 +22,4 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
-gem "no-style-please", path: "/home/user/Desktop/no-style-please"
+gem "no-style-please", git: "https://github.com/DeimosTheMisthios/no-style-please"
