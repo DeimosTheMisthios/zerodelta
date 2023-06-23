@@ -1,5 +1,6 @@
-PATH
-  remote: /home/user/Desktop/no-style-please
+GIT
+  remote: https://github.com/DeimosTheMisthios/no-style-please
+  revision: b9219160202347b367c7c35b8b413b77c0ecfc36
   specs:
     no-style-please (0.4.7)
       jektex (~> 0.1.0)
