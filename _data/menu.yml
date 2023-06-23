@@ -1,0 +1,11 @@
+entries:
+  - title: me
+    entries:
+      - title: github
+        url: https://github.com/DeimosTheMisthios
+      - title: rss feed
+        url: feed.xml
+      - title: "email: deimos at this domain dot tld"
+
+  - title: all posts
+    post_list: true
