@@ -1,9 +1,7 @@
 source "https://rubygems.org"
 gem "jekyll", "~> 3.9.0"
 gem "github-pages", group: :jekyll_plugins
-# If you have any plugins, put them here!
 group :jekyll_plugins do
-  # Apparently this needs to be listed here for latex to work
   gem "jekyll-remote-theme"
 end
 
@@ -22,4 +20,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
-# gem "no-style-please", git: "https://github.com/DeimosTheMisthios/no-style-please"
