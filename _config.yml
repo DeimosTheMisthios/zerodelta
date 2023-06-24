@@ -15,7 +15,7 @@ github_username: DeimosTheMisthios
 
 # Build settings
 # theme: no-style-please
-remote_theme: DeimosTheMisthios/no-style-please@0.5.0
+remote_theme: DeimosTheMisthios/no-style-please
 
 theme_config:
   show_description: true
