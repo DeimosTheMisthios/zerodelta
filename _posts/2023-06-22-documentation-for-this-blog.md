@@ -3,6 +3,7 @@ layout: post
 title:  "Documentation for this blog"
 date:   2023-06-22
 tags: jekyll blog documentation sample
+date-updated: 2023-06-24
 ---
 
 ## About this theme
@@ -11,7 +12,6 @@ The theme is maintained [in a repo on my account](https://github.com/DeimosTheMi
  - A dark or light theme button in the top right, and the [associated JS file](/assets/js/mode-change.js). This was obtained from [another user's Github hosted portfolio](https://github.com/fleetimee/portfolio).
  - Minor changes like syntax highlighting for code blocks, removal of analytics and SEO plugin, changes to default fonts and code blocks.
  - Options to have [uppercase titles](https://github.com/riggraz/no-style-please/pull/21), [commentary appear above the archive page](https://github.com/riggraz/no-style-please/pull/22), [the index content appear on top](https://github.com/riggraz/no-style-please/pull/30), and [display update date in post](https://github.com/riggraz/no-style-please/pull/31).
-
 
 ## Creating a new post
 Add a new post to the `_posts` folder with the name `YYYY-MM-DD-title.md`, with the [front matter](https://jekyllrb.com/docs/front-matter/) similar to that of this post. The URL used is the `title` from the file name, while the displayed title is sourced from the front matter. The site is tested locally using `bundle exec jekyll serve`, while Github pages deployments are available directly on the [home page](/).
