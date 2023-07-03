@@ -525,7 +525,7 @@ $$
 $$
 
 - Double $$ P $$, and store it as the sum ($$ 2^1P $$).
-- Double $$ P $$ again, and do not add it to the sum.
+- Double $$ P $$ again, and do not add it to the sum ($$ 2^1P $$).
 - Double it again, and add it to the sum ($$ 2^1P + 2^3P $$).
 - ....
 
