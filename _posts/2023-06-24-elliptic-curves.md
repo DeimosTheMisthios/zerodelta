@@ -537,4 +537,4 @@ The reverse of the above process of scalar multiplication is called logarithm. W
 
 There may not be a _quick_ way to solve this problem, but it is certainly possible on a case-by-case basis using numerical methods and/or approximation techniques. However, if we change the domain of the elliptic curves from $$ \Reals $$ to $$ \Z_p $$ where $$ p > 3 $$ is a prime, the logarithm problem becomes "discrete" and difficult to solve for larger values of $$ p $$. Here, $$ \Reals $$ refers to the domain of real numbers and $$ \Z_p $$ is a prime field.
 
-The duality, that scalar multiplication is "easy" and discrete logarithm is "hard", is the cornerstone of elliptic cryptography.
+The duality, that scalar multiplication is "easy" and discrete logarithm is "hard", is the cornerstone of elliptic curve cryptography.
