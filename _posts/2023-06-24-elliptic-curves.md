@@ -526,7 +526,7 @@ $$
 
 - Double $$ P $$, and store it as the sum ($$ 2^1P $$).
 - Double $$ P $$ again, and do not add it to the sum.
-- Double it again, and add it to the sum ($$ 2^1P + 2^3P + 2^4P $$).
+- Double it again, and add it to the sum ($$ 2^1P + 2^3P $$).
 - ....
 
 In the end, we are able to compute $$ 250P $$ via 7 doublings and 6 additions. Assuming that the doublings and the additions are $$ O(1) $$, the algorithm is $$ O(k) $$ which is better than step-by-step addition $$ O(2^k) $$.
