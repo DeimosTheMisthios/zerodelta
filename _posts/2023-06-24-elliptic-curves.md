@@ -514,7 +514,7 @@ $$
 Written this way, it appears to take $$ O(n) $$ time which is not very fast. A faster algorithm is the **double and add** method. It requires decomposing a number into $$ k $$ bits and adding them up similar to a traditional binary conversion. This algorithm is $$ O(k) $$.
 
 $$
-250 = 2^71 + 2^61 + 2^51 + 2^41 + 2^31 + 2^20 + 2^11 + 2^00
+250 = 2^71 + 2^61 + 2^51 + 2^41 + 2^31 + 2^20 + 2^11 + 2^00\\
 250 = 2^7 + 2^6 + 2^5 + 2^4 + 2^3 + 2^1
 $$
 
