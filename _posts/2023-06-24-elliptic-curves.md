@@ -7,11 +7,11 @@ tags: cryptography elliptic curve curves
 
 This post contains content from [Andrea Corbellini's gentle introduction to ECC](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/), which is available under the [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-## Definition
+## [Definition](#definition)
 
 For the purposes of crytography, an elliptic curve is given by the equation $$ y^3 = x^2 + ax+ b $$, subject to $$ 4a^3 + 27b^2 \neq 0 $$ (the [discriminant](https://en.wikipedia.org/wiki/Discriminant)). The constraint is applied to exclude points of [singularity](https://en.wikipedia.org/wiki/Singularity_(mathematics)) (where the curve is not well-behaved, for example, not differentiable).
 
-### Plotting elliptic curves
+### [Plotting elliptic curves](#plotting-elliptic-curves)
 
 Python's `matplotlib` and `numpy` make this extremely easy.
 
@@ -123,7 +123,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 Besides the curve, we also include the [point at infinity](https://en.wikipedia.org/wiki/Point_at_infinity) $$ {0} $$, which is the equivalent of zero in point arithmetic. It is not a point on the graph - just the identity of the elliptic curve group.
 
-### Groups
+### [Groups](#groups)
 
 Groups may seem to be a bit of a digression from the topic of elliptic curves, but they are not. A group $$ \mathbb{G} $$ is a set for which a binary operation $$ + $$ called addition is defined in such a manner that it respects the following properties.
 
@@ -136,7 +136,7 @@ An Abelian group has the additional property of **commutativity**, that is, $$ a
 
 Examples of groups include the set of integers $$ \mathbb{I} $$ and the set of real numbers $$ \mathbb{R} $$, but not the set of natural numbers $$ \mathbb{N} $$, which does not satisfy the _presence of identity_ property. Similarly the set of whole numbers $$ \mathbb{W} $$ is excluded because it does not satisfy the _presence of inverse_ property
 
-## Addition over elliptic curves
+## [Addition over elliptic curves](#addition-over-elliptic-curves)
 
 A group over elliptic curves can be defined by defining addition, the identity element and the inverse of an element.
 
@@ -144,7 +144,7 @@ A group over elliptic curves can be defined by defining addition, the identity e
 - Addition is defined for three collinear points $$ P, Q, R $$ lying on the curve as $$ P + Q + R = 0 $$. Since this addition only requires three collinear points and collinearity is without order, it satisfies the properties of both associativity and commutativity.
 - The inverse of an element $$ A = (x_0, y_0) $$ is the one mirrored by the x-axis $$ -A = (x_0, -y_0) $$.
 
-### Addition using geometry
+### [Addition using geometry](#addition-using-geometry)
 
 If $$ P + Q + R = 0 $$, it means $$ P + Q = -R $$. In other words, if we draw a line intersecting the curve at three points, the additive inverse of the any two points is the point symmetric about the x-axis to the third point.
 
@@ -319,7 +319,7 @@ Ok(())
 
 ![Elliptic curves geometric addition](/assets/images/elliptic-curve-02.png "Elliptic curves geometric addition"){: .ioda width="100%"}
 
-#### Selected cases when considering addition
+#### [Selected cases when considering addition](#selected-cases-when-considering-addition)
 
 If either $$ P = 0 $$ (or $$ Q = 0 $$), we can say that $$ P + Q = P + 0 = P $$ (or $$ P + Q = 0 + Q = Q $$) by the definition of the identity element of the group.
 
@@ -476,7 +476,7 @@ $$
 
 If $$ P \ne Q $$ and the line does not touch the curve again, the case is similar to the previous one. The line passing through $$ P $$ and $$ Q $$ is tangent to the curve. If the line is tangent to the curve at $$ P $$, it means $$ 2P + Q = 0 $$; if it is tangent at line $$ Q $$, then $$ 2Q + P = 0 $$.
 
-### Algebraic addition
+### [Algebraic addition](#algebraic-addition)
 
 As I demonstrated above, solving the equation for a line and its intersection with the elliptic curve isn't quick because of the cubic nature of the equations. But there is a way out. Let there be two points $$ P (x_p, y_p) $$ and $$ Q (x_q, y_q) $$ such that $$ x_p \ne x_q $$. The slope $$ m $$ of the line $$ PQ $$ can be calculated.
 
@@ -503,7 +503,7 @@ x_r = m^2 - x_p - x_q\\
 y_r = m(x_r - x_p) + y_p \text{ or } y_r = m(x_r - x_q) + y_q
 $$
 
-### Scalar multiplication
+## [Scalar multiplication](#scalar-multiplication)
 
 Besides addition of two points, we can define scalar multiplication.
 
@@ -531,7 +531,7 @@ $$
 
 In the end, we are able to compute $$ 250P $$ via 7 doublings and 6 additions. Assuming that the doublings and the additions are $$ O(1) $$, the algorithm is $$ O(k) $$ which is better than step-by-step addition $$ O(2^k) $$.
 
-### Logarithm
+## [Logarithm](#logarithm)
 
 The reverse of the above process of scalar multiplication is called logarithm. We use the term logarithm and not division to be congruent with other cryptosystems that use exponentiation instead of multiplication. If $$ Q = nP $$ given both $$ Q $$ and $$ P $$, what is the value of $$ n $$?
 
