@@ -325,7 +325,7 @@ If either $$ P = 0 $$ (or $$ Q = 0 $$), we can say that $$ P + Q = P + 0 = P $$ 
 
 If $$ P = -Q $$, then there is only one line passing via the points P and Q, which are symmetric about the x-axis. This means, again by definition, that $$ P + Q = 0 $$.
 
-If $$ P = Q $$, then it gets a bit trickier. There are infinite lines passing via such a point (and obviously, the curve). I like to think of this using limits: consider a point $$ Q’ \ne P $$. What happens if we make $$ Q' $$ move closer to $$ P $$, till they coincide?
+If $$ P = Q $$, then it gets a bit trickier. There are infinite lines passing via such a point (and obviously, the curve). I like to think of this using limits: consider a point $$ Q' \ne P $$. What happens if we make $$ Q' $$ move closer to $$ P $$, till they coincide?
 
 ![Doubling a point on an elliptic curve](/assets/images/elliptic-curve-03.gif "Doubling a point on an elliptic curve"){: .ioda width="100%"}
 
@@ -465,7 +465,7 @@ Ok(())
 
 The line that passes through P is tangent to the curve and intersects the curve at R such that $$ P + P + R = 0,\text{ or, }2P = -R $$. In other words, the cubic equation (in $$ x $$) resulting from the intersection of the curve and the line has two equal roots ($$ x_p $$ twice).
 
-The observation, that the line is tangent to P, which we made with the GIF above can be made algebraically by calculating the slope of the line $$ PQ' $$ when $$ Q` $$ is extremely close to $$ P $$. This is obviously, equal to the slope of the curve at $$ P $$.
+The observation, that the line is tangent to P, which we made with the GIF above can be made algebraically by calculating the slope of the line $$ PQ' $$ when $$ Q' $$ is extremely close to $$ P $$. This is, obviously, equal to the slope of the curve at $$ P $$.
 
 $$
 P = (x_p, y_p)\\
