@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Elliptic curves"
-date:   2023-06-24
+date:   2023-07-03
+date-updated: 2023-07-04
 tags: cryptography elliptic curve curves
 ---
 
